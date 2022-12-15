@@ -256,3 +256,7 @@ figure.ita{
 .wave-1hkxOo.reflection{
     transform: scaleY(-1);
 }
+
+.item-social i{
+    padding: 5px;
+}
