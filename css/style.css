@@ -127,9 +127,6 @@ main > section{
 }
 
 
-main > .section:nth-child(2n){
-    background-color: rgb(203, 203, 203);
-}
 
 .container .row.row-reverse{
     flex-direction: row-reverse;
@@ -243,11 +240,19 @@ figure.ita{
     color: blueviolet;
 }
 
-.section.wave{
-    background-color:
-}
-
 .flag-center{
     display: flex;
     align-items: center;
+}
+
+.section.wave{
+    background-color: rgb(203, 203, 203);
+}
+
+.wave-1hkxOo{
+    transform: translate(10px, 10px);
+}
+
+.wave-1hkxOo.reflection{
+    transform: scaleY(-1);
 }
