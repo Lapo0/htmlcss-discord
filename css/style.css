@@ -1,0 +1,265 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+img{
+    max-width: 80%;
+}
+
+[class^='row']{
+    display: flex;
+    align-items: center;
+}
+
+/*HEADER*/
+header{
+    background-color: #255EE9;
+}
+
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.row-cols-3{
+    justify-content: space-between;
+}
+
+.row-cols-3 > .col{
+    margin: 10px 0;
+    padding: 5px;
+}
+
+.debug [class^='col'] {          /*DEBUG*/
+	border: 3px dashed black;
+    background-color: blueviolet;
+}
+
+/*Colonne header in container*/
+nav > a{
+    color: white;
+    margin: 5px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.button button{
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    border: 0;
+    font-size: 12px;
+}
+
+/*Sezione header*/
+.section-header .small.container{
+    color: white;
+}
+
+.small.container > h1{
+    font-size: 35px;
+    padding-bottom: 25px;
+}
+
+.small.container p{
+    line-height: 25px;
+}
+
+.small.container .button{
+    padding: 10px;
+}
+
+.button .black-button{
+    background-color: rgb(24, 24, 24);
+    color: white;
+}
+
+/*Piccolo container*/
+.section-header{
+    padding: 100px 0 50px 0;
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+}
+
+.small.container{
+    max-width: 700px;
+    text-align: center;
+    padding: 25px 25px;
+}
+
+.debug .small.container{           /*DEBUG*/
+    background-color: blueviolet;
+    min-height: 200px;
+    border: 2px dashed black;
+}
+
+/*CORPO PAGINA*/
+main > section{
+    padding: 30px 0;
+}
+
+.container.section .row{          /*DEBUG*/
+    min-height: 300px;
+}
+
+.col.col-big{
+    flex-basis: 60%;
+    text-align: right;
+}
+
+.col.col-big .img-left{
+    text-align: left;
+}
+
+.col.col-small{
+    flex-basis: 40%;
+}
+
+.container.section .text-item{
+    padding: 55px 110px 55px 0;
+}
+
+.container.section .row-reverse .text-item{
+    padding: 55px 0 55px 110px;
+} 
+
+.text-item h2{
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+.text-item p{
+    font-size: 10px;
+    line-height: 15px;
+}
+
+.debug .col.col-small{            /*DEBUG*/
+    background-color: aqua;
+}
+
+main > .section:nth-child(2n){
+    background-color: rgb(203, 203, 203);
+}
+
+.container .row.row-reverse{
+    flex-direction: row-reverse;
+}
+
+.big.container div.text-item{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.big.container div.star{
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.star p{
+    background-image: url(../img/stars.svg);
+    background-size: contain;
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.button .blue{
+    background-color: rgb(22, 36, 36);
+    color: white;
+}
+
+.wave-1hkxOo{
+    color: rgb(203, 203, 203);
+}
+
+.wave-1hkxOo .rotate{
+    color: rgb(203, 203, 203);
+}
+
+/*Sezione no flex*/
+section .big.container{        /*DEBUG*/
+    text-align: center;
+}
+
+/*FOOTER*/
+footer{
+    background-color: rgb(66, 64, 89);
+}
+
+footer > section:first-child{
+    border-bottom: 2px solid gray;
+    padding: 5px 0 25px 0;
+}
+
+
+.row-cols-5 .col.col-30{
+    flex-basis: 2/6;
+}
+
+.row-cols-5 :not(.col-30){
+    flex-basis: calc((100%-2/6) / 4);
+}
+
+.debug .row-cols-5{            /*DEBUG*/
+    min-height: 300px;
+    padding: 100px;
+}
+
+.row-cols-5.footer{
+    align-items: flex-start;
+}
+
+
+footer section:last-child{
+    padding-top: 25px;
+}
+
+.debug .container.nav{            /*DEBUG*/
+    background-color: blue;
+}
+
+.container.nav{
+    padding: 15px 0;
+}
+
+.container .row.row-between{
+    justify-content: space-between;
+}
+
+.row-between > *{
+    padding: 5px;
+}
+
+.footer-language{
+    font-size: 22px;
+}
+
+figure.ita{
+    width: 30px;
+    display: inline-block;
+    padding: 10px 0;
+}
+
+#language{
+    border: 0;
+    color: white;
+    background-color: rgb(66, 64, 89);
+}
+
+.row-cols-5 .col li{
+    list-style-type: none;
+    line-height: 30px;
+    color: white;
+    font-size: 12px;
+}
+
+.container.footer{
+    padding: 30px 0;
+}
+
+.footer-language h3,h4{
+    color: blueviolet;
+}
