@@ -9,6 +9,11 @@ img{
     max-width: 80%;
 }
 
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 [class^='row']{
     display: flex;
     align-items: center;
@@ -17,11 +22,6 @@ img{
 /*HEADER*/
 header{
     background-color: #255EE9;
-}
-
-.container{
-    max-width: 800px;
-    margin: 0 auto;
 }
 
 .row-cols-3{
@@ -33,7 +33,7 @@ header{
     padding: 5px;
 }
 
-.debug [class^='col'] {
+[class^='col'] {
 	align-items: center;
 }
 
@@ -201,10 +201,6 @@ footer section:last-child{
     padding: 15px 0;
 }
 
-.container .row.row-between{
-    justify-content: space-between;
-}
-
 .row-between > *{
     padding: 5px;
 }
@@ -240,8 +236,7 @@ figure.ita{
     color: blueviolet;
 }
 
-.flag-center{
-    display: flex;
+.row-flag-center{
     align-items: center;
 }
 
@@ -250,7 +245,7 @@ figure.ita{
 }
 
 .wave-1hkxOo{
-    transform: translate(10px, 10px);
+    transform: translate(0, 10px);
 }
 
 .wave-1hkxOo.reflection{
