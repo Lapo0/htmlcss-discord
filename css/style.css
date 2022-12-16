@@ -166,13 +166,14 @@ section .big.container{
 /*Sezione Download*/
 /*Stelle */
 .big.container div.star{
-    max-width: 400px;
+    max-width: 300px;
     margin: 0 auto;
 }
 
 .star p{
     background-image: url(../img/stars.svg);
     background-size: contain;
+    background-repeat: no-repeat;
     padding: 10px;
     font-size: 15px;
     margin-bottom: 30px;
